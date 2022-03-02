@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package bsp.kbh;
+
+// Import needs to be from where the compiler is located
+// eg the full path from the compiler to the .proto file
+import "protos/memory_message.proto";
+
+message CPU {
+  string brand = 1; // Like Intel or AMD
+  string name = 2;  // Name and version of the CPU
+  uint32 cores = 3; // Amount of cores in the cpu eg. 4 or 8
+  uint32 num_threads = 4;
+  float min_ghz = 5;
+  float max_ghz = 6;
+}
+
+message GPU {
+  string brand = 1; // Like Intel or AMD
+  string name = 2;  // Name and version of the CPU
+  float min_ghz = 3;
+  float max_ghz = 4;
+  Memory memory = 5; // From imported memory_message.proto
+}

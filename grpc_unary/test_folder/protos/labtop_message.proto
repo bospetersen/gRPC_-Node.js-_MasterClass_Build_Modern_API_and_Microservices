@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package bsp.kbh;
+
+import "protos/keyboard_message.proto";
+import "protos/memory_message.proto";
+import "protos/processor_message.proto";
+import "protos/screen_message.proto";
+import "protos/storage_message.proto";
+import "protos/timestamp.proto";
+
+message Labtop {
+  string id = 1;
+  string brand = 2;
+  string name = 3;
+  CPU cpu = 4;
+  Memory memory = 5;
+  repeated GPU gpus = 6;
+  repeated Storage storage = 7;
+  Screen screen = 8;
+  Keyboard kayboard = 9;
+  
+  oneof wight {
+    double weight_kg = 10;
+    double weight_lb = 11;
+  }
+  double price_usd = 12;
+  double release_year = 13;
+  Timestamp updated_at = 14;
+}

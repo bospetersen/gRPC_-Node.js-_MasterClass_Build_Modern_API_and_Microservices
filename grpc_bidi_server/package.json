@@ -1,0 +1,23 @@
+{
+  "name": "terminal-project-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client":"node ./client/client.js",
+    "server":"node ./server/index.js",
+    "start": "nodemon ./server/index.js",
+    "start-client": "nodemon ./client/client.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.4",
+    "google-protobuf": "^3.19.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

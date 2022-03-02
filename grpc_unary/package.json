@@ -1,0 +1,26 @@
+{
+  "name": "grpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "node ./client/client.js",
+    "server": "node ./server/index.js",
+    "watch": "concurrently 'npm:server'", 
+    "start": "nodemon index.js --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.3",
+    "@grpc/proto-loader": "^0.6.9",
+    "google-proto-files": "^2.5.0",
+    "google-protobuf": "^3.19.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

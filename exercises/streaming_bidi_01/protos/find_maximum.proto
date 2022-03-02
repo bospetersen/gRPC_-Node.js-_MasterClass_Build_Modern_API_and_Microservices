@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package FindMaxPackage;
+
+service FindMaximum {
+  rpc findMaximum(stream FindMaximumRequest)
+      returns (stream FindMaximumResponse);
+}
+
+message FindMaximumRequest { int32 req_number = 1; }
+message FindMaximumResponse { int32 maximum_number = 1; }

@@ -1,0 +1,23 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "node ./client/client.js",
+    "start": "nodemon ./server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.4",
+    "google-protobuf": "^3.19.4",
+    "knex": "^1.0.2",
+    "knex-migrate": "^1.7.4",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

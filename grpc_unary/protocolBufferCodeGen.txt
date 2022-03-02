@@ -1,0 +1,17 @@
+Please use the following command to generate code using protobuf plugin.  You'll need this in the next lectures.
+
+Comand line script for executing protoc on windows 
+/c/Users/Bruger/Documents/__PROGRAMMING_PROJECTS/___gRPC_[Node.js]_MasterClass_Build_Modern_API_and_Microservices/grpc/protoc --js_out=import_style=commonjs,binary:./server ./protos/dummy.proto
+
+==================================================================================================================================================================================================================
+
+Get the latest protobuf-compiler here:
+https://github.com/protocolbuffers/protobuf/releases
+
+
+Read more about generating protocol buffer code here:
+https://developers.google.com/protocol-buffers/docs/proto#generating
+
+
+
+https://daily.dev/blog/build-a-grpc-service-in-nodejs
